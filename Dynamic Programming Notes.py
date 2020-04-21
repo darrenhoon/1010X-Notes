@@ -103,3 +103,25 @@ def num_of_paths(maze):
 num_of_paths(maze1) #should be 2
 num_of_paths(maze2) #should be 3003
 print(table)
+
+''' Pascal's Triangle using a list to keep track of values and theory to reduce complexity as opposed to recursion
+recursive version:
+def pascal(row, col):
+    if col == 1 or col == row:
+        return 1
+    else:
+        return pascal(row - 1, col) + pascal(row - 1, col - 1)
+'''
+def faster_pascal(row, col):
+    first_line = [1,]*(col)
+    table = []
+    for i in range(row):
+        table.append(first_line.copy())
+    for j in range(1, col):
+        table[0][j] = 0
+    for k in range(1, row):
+        for l in range(1, col):
+            table[k][l] = table[k-1][l-1] + table[k-1][l]
+    return table[row-1][col-1]
+
+
