@@ -37,7 +37,8 @@ print(table)
 
 
 
-'''Interesting variation to the question where the person now needs to navigate across a field with areas to avoid'''
+'''Interesting variation to the question where the person now needs to navigate across a field with areas to avoid. 1 represents a safe
+path while 0 represents a dead-end'''
 maze1 = ((1, 1, 1, 1, 1, 1, 1, 1, 0, 1),
          (1, 0, 0, 1, 1, 1, 0, 0, 1, 1),
          (0, 1, 1, 1, 0, 0, 1, 1, 1, 0),
@@ -58,13 +59,6 @@ maze2 = ((1, 1, 1, 1, 1, 1, 1, 1, 1),
          (1, 1, 1, 1, 1, 1, 1, 1, 1),
          (1, 1, 1, 1, 1, 1, 1, 1, 1),
          (1, 1, 1, 1, 1, 1, 1, 1, 1))
-
-maze3 = ((1, 0, 1, 1),
-         (1, 0, 1, 1),
-         (1, 0, 1, 1),
-         (1, 0, 1, 1),
-         (1, 0, 1, 0),
-         (1, 0, 0, 1))
 
 table = {}
     
